@@ -1,0 +1,33 @@
+baseURL = '/'
+languageCode = 'en-us'
+theme = 'hugo-cat'
+
+PygmentsCodeFences = true
+PygmentsStyle = "solarized-dark256"
+pluralizelisttitles = "false"
+paginate  = 15
+disableHugoGeneratorInject = false
+enableEmoji = true
+
+[params]
+ava = "/img/cat.png"
+owner = "nimbi"
+talk = "Hello guys &#128075; im cool kitty..."
+description = "nimbi"
+favicon = "/img/logo.svg"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "i"
+url = "/i/"
+weight = 2
+
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.111.3"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>I on </title>
+    <link>/i/</link>
+    <description>Recent content in I on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jan 2024 23:54:29 -0500</lastBuildDate>
+    <atom:link href="/i/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Order Cancelled</title>
+      <link>/i/order-cancelled/</link>
+      <pubDate>Sat, 06 Jan 2024 23:54:29 -0500</pubDate>
+      <guid>/i/order-cancelled/</guid>
+      <description>CANCELLED</description>
+    </item>
+    <item>
+      <title>Order Successful</title>
+      <link>/i/order-successful/</link>
+      <pubDate>Sat, 06 Jan 2024 23:54:23 -0500</pubDate>
+      <guid>/i/order-successful/</guid>
+      <description>SUCCESSFUL</description>
+    </item>
+  </channel>
+</rss>
