@@ -45,30 +45,30 @@
 
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;cursor:pointer"
-  id="checkout-button-price_1OVmpa21Mlrvv4WNKZuxnfLU"
+  id="checkout-button-price_1OVpDb21Mlrvv4WNDvecS7yy"
   role="link"
   type="button"
 >
-  Pay Invoice
+  Pay
 </button>
 
 <div id="error-message"></div>
 
 <script>
 (function() {
-  var stripe = Stripe('pk_live_TIU5aOeQg2Zb1Ktp3S5N5L3E');
+  var stripe = Stripe('pk_test_bBHA3XVNfQbTW1IrDubhhWPP');
 
-  var checkoutButton = document.getElementById('checkout-button-price_1OVmpa21Mlrvv4WNKZuxnfLU');
+  var checkoutButton = document.getElementById('checkout-button-price_1OVpDb21Mlrvv4WNDvecS7yy');
   checkoutButton.addEventListener('click', function () {
     
 
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1OVmpa21Mlrvv4WNKZuxnfLU', quantity: 1}],
+      lineItems: [{price: 'price_1OVpDb21Mlrvv4WNDvecS7yy', quantity: 1}],
       mode: 'payment',
       
 
-      successUrl: '//pay.nimbi.it/i/order-successful',
-      cancelUrl: '//pay.nimbi.it/i/order-cancelled',
+      successUrl: window.location.protocol + '//pay.nimbi.it/successful',
+      cancelUrl: window.location.protocol + '//pay.nimbi.it/cancelled',
     })
     .then(function (result) {
       if (result.error) {
